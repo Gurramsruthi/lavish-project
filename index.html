@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavish - UI & UX Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+}
+.animated-word {
+            font-size: 3rem;
+            font-weight: bold;
+            position: relative;
+            animation: slideDown 2s ease-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -100%;
+                opacity: 0;
+            }
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
+.hero-section {
+    background: url("home-bg.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin: 20px 0;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.hero-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.service {
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+}
+
+.skills {
+    margin-top: 20px;
+}
+.section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .lavish-content {
+            width: 48%;
+        }
+
+        .lavish-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .lavish-content p {
+            line-height: 1.6;
+        }
+
+        .progress-section {
+            width: 48%;
+        }
+
+        .progress-bar {
+            background-color: #333;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .progress-bar span {
+            background-color: #d9534f;
+            display: block;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .progress-bar[data-label]:after {
+            content: attr(data-label);
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+
+
+        .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.top-row img {
+    width: 30%; /* Adjusts width to fit 3 images in a row */
+    margin: 0 10px;
+}
+
+.bottom-row img {
+    width: 45%; /* Adjusts width to fit 2 images in a row */
+    margin: 0 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .contact-info, .contact-form {
+            width: 48%;
+        }
+
+        .contact-info {
+            line-height: 2;
+        }
+
+        .contact-info a {
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background-color:rgb(255, 255, 255);
+            color: #790c0c;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #911713;
+            cursor: pointer;
+            border-radius: 0;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #c9302c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #777;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        h2{
+          color: #e74c3c;
+        }
+       
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .lavish-content,
+    .progress-section {
+        width: 48%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 48%;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section h2 {
+        font-size: 4rem;
+    }
+
+    .service {
+        flex: 1 1 30%;
+    }
+}
+           
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <div class="animated-word">  <h1>Simple and Elegant</h1><h2>Lavish</h2></div>
+            <h1>UI & UX Specialist</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, </h3><p>luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button>Get Started</button>
+        </div>
+    </header>
+
+    <section class="services-section">
+        <h3><center>What I Do</center></h3>
+        <div class="services">
+            <div class="service">
+                <img src="res (2).png">
+                <h4>Responsive Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <img src="webb.png">
+                <h4>Web Templates</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <img src="ui.png" >
+                <h4>UI & UX Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+    <div class="section">
+        <div class="lavish-content">
+            <h3>About Lavish</h3>
+            <H2>Designer & Developer</H2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed diam nonummy nibh euismod tincidunt ut Laoreet. Dolore magna aliquam erat volutpat</p>
+                <p>Dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed diam nonummy nibh euismod tincidunt ut Laoreet </p>
+        
+        </div>
+        
+        <div class="progress-section">
+            <h2>Progress</h2>
+            <h5>Web design</h5>
+            <div class="progress-bar" data-label="90%">
+                <span style="width: 90%;"></span>
+            </div>
+            <h5>Web Apps</h5>
+            <div class="progress-bar" data-label="80%">
+                <span style="width: 80%;"></span>
+            </div>
+            <h5>SEO Stuffs</h5>
+            <div class="progress-bar" data-label="85%">
+                <span style="width: 85%;"></span>
+            </div>
+            <h5>HTML5 & CSS3</h5>
+            <div class="progress-bar" data-label="95%">
+                <span style="width: 95%;"></span>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section class="portfolio-section">
+        <h3><center>Portfolio</center></h3>
+        <div class="portfolio-container">
+            <div class="row top-row">
+                <img src="portfolio-img1.jpg" alt="Image 1">
+                <img src="img2.png" alt="Image 2">
+                <img src="portfolio-img3.jpg" alt="Image 3">
+            </div>
+            <div class="row bottom-row">
+                <img src="portfolio-img4.jpg" alt="Image 4">
+                <img src="portfolio-img5.jpg" alt="Image 5">
+            </div>
+        </div>
+    </section>
+         <div class="contact-section">
+         <div class="contact-info">
+             <h2>Contact Me</h2>
+             <img src="ph.jpeg" width="20">
+             <p><strong>Phone:</strong> 080-000-0000</p>
+             <img src="mail.jpeg" width="20">
+             <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+             <img src="add.jpg" width="20">
+             <p><strong>Address:</strong> 123 Old Building Name, CA, 45600</p>
+             
+        </div>
+    
+         <div class="contact-form">
+            <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Me</button>
+        </form>
+    </div>
+</div>
+
+    <footer>
+        <p><center>&copy; 2024 Lavish. All rights reserved.</center></p>
+    </footer>
+</body>
+</html>
+
+
+
+
